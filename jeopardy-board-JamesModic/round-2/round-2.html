@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeopardy</title>
+    <link rel="stylesheet" href="../index.css">
+    
+  </head>
+  <body>
+    <!-- Title that displays which round it is -->
+    <div class="typewriter">
+      <h1>Round 2!</h1>
+    </div>
+    
+    
+    <!-- 6x6 table to hold the questions -->
+    
+    <table id="grid" class="table">
+      <thead>
+       <tr>
+         <th scope="col">Nature</th>
+         <th scope="col">Animals</th>
+         <th scope="col">Computers</th>
+         <th scope="col">Mythology</th>
+         <th scope="col">History</th>
+         <th scope="col">General</th>
+       </tr>
+     </thead>
+     <tbody>
+       <tr>
+         <td scope="row" class="Nature btn" id="01">600</td>
+         <td type="btn" class="Animals btn" id="02">600</td>
+         <td type="btn" class="Computers btn" id="03">600</td>
+         <td type="btn" class="Mythology btn" id="04">600</td>
+         <td type="btn" class="History btn" id="05">600</td>
+         <td type="btn" class="General btn" id="06">600</td>
+       </tr>
+       <tr>
+           <td scope="row" class="Nature btn" id="07">700</td>
+           <td type="btn" class="Animals btn" id="08">700</td>
+           <td type="btn" class="Computers btn" id="09">700</td>
+           <td type="btn" class="Mythology btn" id="10">700</td>
+           <td type="btn" class="History btn" id="11">700</td>
+           <td type="btn" class="General btn" id="12">700</td>
+         </tr>
+         <tr>
+           <td scope="row" class="Nature btn" id="13">800</td>
+           <td type="btn" class="Animals btn" id="14">800</td>
+           <td type="btn" class="Computers btn" id="15">800</td>
+           <td type="btn" class="Mythology btn" id="16">800</td>
+           <td type="btn" class="History btn" id="17">800</td>
+           <td type="btn" class="General btn" id="18">800</td>
+         </tr>
+         <tr>
+           <td scope="row" class="Nature btn" id="19">900</td>
+           <td type="btn" class="Animals btn" id="20">900</td>
+           <td type="btn" class="Computers btn" id="21">900</td>
+           <td type="btn" class="Mythology btn" id="22">900</td>
+           <td type="btn" class="History btn" id="23">900</td>
+           <td type="btn" class="General btn" id="24">900</td>
+         </tr>
+         <tr>
+           <td scope="row" class="Nature btn" id="25">500</td>
+           <td type="btn" class="Animals btn" id="26">500</td>
+           <td type="btn" class="Computers btn" id="27">500</td>
+           <td type="btn" class="Mythology btn" id="28">500</td>
+           <td type="btn" class="History btn" id="29">500</td>
+           <td type="btn" class="General btn" id="30">500</td>
+         </tr>
+       </tbody>
+   
+     </table>
+
+     <div class="flexbox-container" id="questionBox"></div>
+
+
+     <div class="input">
+     <!-- indication for whose turn it is -->
+<label for="guess"><h1>Your Turn, <span class="player-name" id="active-player"></span></label>
+         <input
+           type="text"
+           id="guess"
+           size="40"
+           placeholder="Type answer here"
+         />
+        
+        <!-- Guess button -->
+             <button type="submit" id="guess-button" class="btn">Guess</button>
+          
+<!-- pass button -->
+         <button type="submit" class="btn" id="button-pass">Pass</button>
+        </Div>
+
+         <div class="flexbox-container">
+           <span class="player-name" id="p1score">Player One Score:</span>
+           <span class="score" id="p1score">0</span>
+           <span class="player-name">Player Two Score:</span>
+           <span class="score" id="p2score">0</span>
+         </div>
+
+         <div class="button-container">
+          <button class="btn">
+          <a href="../final-jeopardy/final-jeopardy.html"> Final Jeopardy
+          </a>
+        </button>
+        
+<!-- footer displaying site information -->
+        <footer> Jeopardy Round 2</footer>
+        <!-- link to the javascript file -->
+        <script src="./round-2.js" type="module"></script>
+</body>
+
+</html>
+
+
+  </body>
+</html>
